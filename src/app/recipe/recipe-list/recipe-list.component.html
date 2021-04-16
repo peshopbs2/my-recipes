@@ -1,1 +1,7 @@
-<p>recipe-list works!</p>
+<h1>Рецепти</h1>
+<ul class="row m-0">
+    <li *ngFor="let recipe of recipes" class="col-md-4">
+        <a href="#">{{ recipe.name }}</a>
+        <img src="{{ recipe.imagePath}}" alt="" class="img-thumbnail img-responsive">
+    </li>
+</ul>
